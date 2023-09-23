@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #1877f2;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .product {
+            margin-bottom: 20px;
+            text-align: center; 
+            border: 3px solid #ccc; 
+            border-radius: 10px; 
+            padding: 20px; 
+            transition: transform 0.3s, border-color 0.3s; 
+        }
+
+        .product:hover {
+            transform: scale(1.1); 
+            border-color: #ff6600; 
+            z-index: 1; 
+        }
+
+        .product h2 {
+            font-size: 20px;
+            color: #1877f2; 
+            transition: color 0.3s; 
+        }
+
+        .product h2 a {
+            text-decoration: none;
+            color: #1877f2; 
+            transition: color 0.3s; 
+        }
+
+        .product h2 a:hover {
+            color: #ff6600; 
+        }
+
+        .product p {
+            font-size: 16px;
+        }
+
+        .product img {
+            width: 200px; 
+            height: auto;
+            display: block; 
+            margin: 0 auto 10px; 
+        }
+
+        .product a {
+            display: block; 
+            text-decoration: none;
+            color: inherit; 
+        }
+
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Use Cases</h1>
+    </header>
+    <div class="container">
+        <!-- Wrap pairs of product divs in a grid container -->
+        <div class="grid-container">
+            <div class="product">
+                <a href="tech-news-global-link.html">
+                    <img src="./Tech-News-Global.jpg" alt="Tech News Global">
+                    <h2><a href="tech-news-global-link.html">Tech News Global</a></h2>
+                </a>
+                <p>For corporate technology companies, Technews Global is the market leader in buy intent-driven marketing and sales services.</p>
+            </div>
+            <div class="product">
+                <a href="africoursity-link.html">
+                    <img src="./afri.jpg" alt="Africoursity-MOOC platform">
+                    <h2><a href="africoursity-link.html">Africoursity-MOOC platform</a></h2>
+                </a>
+                <p>Africoursity utilizes technology to make education at all levels accessible, and free for anyone, anywhere.</p>
+            </div>
+            <div class="product">
+                <a href="quick-note-link.html">
+                    <img src="./quiknote.jpg" alt="Quick Note">
+                    <h2><a href="quick-note-link.html">Quick Note</a></h2>
+                </a>
+                <p>Buy and sell study materials online.</p>
+            </div>
+            <div class="product">
+                <a href="aidecia-link.html">
+                    <img src="./aidecia.png" alt="AIDECIA - School Management Systems">
+                    <h2><a href="aidecia-link.html">AIDECIA - School Management Systems</a></h2>
+                </a>
+                <p>With the aid of AIDECIA, you can efficiently streamline operations, allocate resources more effectively, and cut expenses across your school organization.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
