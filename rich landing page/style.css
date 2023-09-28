@@ -1,0 +1,526 @@
+/* General Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: white;
+}
+
+h2{
+  font-weight: lighter;
+}
+
+p{
+  text-align: start;
+}
+
+/*Styling the header */
+.header-container{
+  background-image: url('./assets/intro-background.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  padding: 0;
+}
+
+.header1{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 120px;
+}
+
+.left-container{
+  display: flex;
+  padding-top: 18px;
+  width: 900px;
+}
+
+.globe-text{
+  padding-top: 6px;
+}
+
+.globe-text p{
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.lower{
+  color: #999;
+}
+
+.right-container{
+  display: flex;
+  padding-top: 25px;
+}
+
+.call{
+  display: flex;
+  margin-right: 100px;
+  padding-right: 5px;
+}
+
+.call p{
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.track{
+  display: flex;
+  margin-right: 0;
+}
+
+.track p{
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.header2{
+  background-color: none;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 58.5vh;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav-bar1{
+  display: flex;
+  margin-left: 375px;
+  margin-right: 375px;
+  padding-top: 18px;
+}
+
+.nav-bar{
+  margin-left: 370px;
+  margin-right: 370px;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid grey;
+}
+
+.nav-items p{
+  color: #7D91A1;
+  font-size: 15px;
+}
+
+.nav-items li{
+  padding: 10px 0;
+}
+
+/* Set the default color for the line */
+.nav-items li::before {
+  content: "";
+  height: 1px;
+  background-color: grey; /* Default color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: scaleX(0); /* Initially invisible */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Change the line color on hover */
+.nav-items li:hover::before {
+  transform: scaleX(1); 
+  background-color: #0C76FA;
+  height: 3px;
+}
+
+/* Style the navigation items */
+.nav-items li {
+  position: relative;
+  padding: 10px 0px;
+  list-style: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: white; /* Default text color */
+}
+
+.nav-items p {
+  font-size: 14px;
+  margin: 0;
+  color: #999;
+  font-weight: lighter; /* Color for the secondary text */
+}
+
+/* Styling The intro text */
+
+.intro-text-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+}
+
+.intro-text{
+  text-align: center;
+  color: white;
+}
+
+.intro-text p{
+  text-align: center;
+  font-size: 20px;
+}
+
+.center-text{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quote{
+  margin-top: 20px;
+  width: 160px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  color: #0C76FA;
+  font-size: 15px;
+}
+
+
+/* Styling Intro Board */
+.board-container{
+  position: absolute;
+  bottom: -13%;
+  left: 18%;
+}
+
+.intro-board{
+  justify-content: center;
+  display: inline-block;
+  
+}
+
+.intro-board-items{
+  display: flex;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.board-content{
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.board-pic {
+  height: 60px;
+  width: 60px;
+  margin-left: 17px;
+  transition: fill 0.2s; /* Add a transition for a smoother effect */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.board-item {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #0046A7;
+  padding: 2px;
+  height: 160px;
+  width: 280px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  /* Add any other styles you need */
+}
+
+.board-item p{
+  color: gray;
+  font-size: 12px;
+}
+
+
+.board-item:hover {
+  background-color: #0C76FA;
+  transform: scale(1.1); /* Scale up slightly on hover */
+  border-radius: 10px;
+  color: white;
+  overflow: visible;
+  z-index: 2;
+}
+
+.board-item:hover p{
+  color: white;
+}
+
+.board-pic:hover{
+  fill: white;
+}
+
+/*Styling the Services Section */
+#services{
+  display: block;
+  padding-top: 145px;
+  text-align: center;
+  font-size: 20px;
+  background-color: white;
+  color: #0046A7;
+  position: relative;
+  z-index: -1;
+  padding-bottom: 8%;
+}
+
+.choose{
+  padding-bottom: 100px;
+}
+
+.services-about{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.services-content{
+  padding: 0;
+}
+
+/* Styling the image carousel */
+.services-pic {
+  left: -2%;
+  width: 300px;
+  height: 200px;
+  margin-right: 60px;
+  position: relative;
+  overflow: visible; /* Allow overflow to be viisble */
+}
+
+.first-img,
+.second-img,
+.third-img {
+  position: absolute;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover; /* This ensures the images cover the entire div */
+  transition: transform 0.5s ease;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.second-img {
+  transform: translateY(-15.33%) translateX(8.33%); /* Move the second image diagonally to the right */
+  z-index: 2; /* Bring the second image forward in the stack */
+}
+
+.third-img {
+  transform: translateY(10.67%) translateX(20.67%); /* Move the third image diagonally to the right */
+  z-index: 3; /* Bring the third image forward in the stack */
+}
+
+.services-text{
+  width: 400px;
+  color: gray;
+  font-size: 15px;
+}
+
+#about-us{
+  flex-direction: column;
+  padding-left: 600px;
+  position: relative;
+  background-color: #F3F5F8;
+  padding-bottom: 4%;
+}
+
+.frieght{
+  display: flex;
+  padding-top: 10%;
+}
+
+.frieght-intro{
+  width: 470px;
+}
+
+.frieght-intro h1{
+  color: #0046A7;
+  font-size: 26px;
+}
+
+.frieght-text{
+  margin-top: 14px;
+  color: #7D91A1;
+  width: 380px;
+  font-size: 15px;
+}
+
+.author{
+  margin-top: 25px;
+}
+
+.author h1{
+  font-size: 13px;
+}
+
+.founder{
+  margin-top: 0;
+  font-size: 10px;
+}
+
+.frieght-intro p{
+  color: #7D91A1;
+  font-size: 14px;
+  width: 500px;
+}
+
+.frieght-pic{
+  height: 180px;
+  width: 300px;
+  border-radius: 7px;
+}
+
+.about{
+  margin-right: 20px;
+}
+
+.about h1{
+  color: #0046A7;
+  font-size: 15px;
+  margin-top: 6px;
+}
+
+.about p{
+  color: #7D91A1;
+  font-size: 10px;
+  margin-top: 10px;
+  width: 200px;
+}
+
+#projects{
+  background-color: #07254F;
+  padding-left: 550px;
+  padding-right: 400px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  position: relative;
+}
+
+.projects-container{
+  display: flex;
+}
+
+.unmatched{
+  color: white;
+  font-size: 25px;
+  padding-left: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.projects-pic{
+  position: absolute;
+  height: 50px;
+  width:  50px;
+  transform: translateY(-55%) translateX(50%);
+  background-color: #07254F;
+}
+
+.first-project{
+  padding-top: 5rem;
+}
+
+.project-border{
+  border: 4px solid #25508C;
+  margin: 10%;
+  margin-top: 20%;
+}
+
+.projects-icon{
+  color: white;
+}
+
+.project-border h1{
+  margin-left: 1rem;
+  padding-top: 2rem;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.land{
+  border-color: white;
+}
+
+.project-border p{
+  color: #7D91A1;
+  font-size: 12px;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+#contact-us{
+  background-color: #041329;
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 350px;
+  padding-right: 180px;
+}
+
+.contact-container{
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-logo{
+  display: flex;
+  margin: 0;
+}
+
+.footer-text{
+  margin-top: 12px;
+  width: 300px;
+  font-size: 10px;
+}
+
+.footer1 h1{
+  font-size: 20px;
+}
+
+.email{
+  background-color: #0C76FA;
+  color: white;
+  width: 50px;
+  height: 24px;
+  border: none;
+  margin-left: 0;
+  display: inline-block;
+  position: relative;
+  left: -5px;
+  top: -0px;
+}
+
+.ending{
+  display: flex;
+  justify-content: space-around;
+}
